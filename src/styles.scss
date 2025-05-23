@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("tailwindcss");
-@plugin "tailwindcss-primeui";
+@use "tailwindcss";
+@import "primeicons/primeicons.css";
+
+// @plugin "tailwindcss-primeui";
 
 @layer tailwind-base, primeng, tailwind-utilities;
 
@@ -10,5 +12,32 @@
 
 @layer tailwind-utilities {
   @tailwind components;
-  @tailwind utilities;
+  @tailwind utilities; 
+} 
+
+
+@font-face {
+  font-family: 'Firacode';
+  src: url('/assets/fonts/FiraCode-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('/assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+.firacode {
+  font-family: 'Firacode';
+}
+
+.mont {
+  font-family: 'Mont';
+}
+
+html, body {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
 }
