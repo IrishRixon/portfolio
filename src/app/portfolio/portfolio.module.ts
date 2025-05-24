@@ -7,6 +7,7 @@ import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { ButtonModule } from 'primeng/button';
 import { IntroComponent } from './portfolio/intro/intro.component';
 import { SkillsComponent } from './portfolio/skills/skills.component';
+import { ProjectsComponent } from "./portfolio/projects/projects.component";
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SkillsComponent } from './portfolio/skills/skills.component';
     CommonModule,
     AvatarModule,
     AvatarGroupModule,
-    ButtonModule
-  ]
+    ButtonModule,
+    ProjectsComponent
+]
 })
 export class PortfolioModule { }
