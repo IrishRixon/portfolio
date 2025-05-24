@@ -1,0 +1,18 @@
+img {
+    height: 20px;
+    width: 20px;
+    object-fit: fill;
+}
+
+ul {
+    justify-content: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+}
