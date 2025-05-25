@@ -1,0 +1,24 @@
+<div class="flex p-16 bg-slate-200 min-h-screen">
+
+    <div class="flex w-full">
+        <div class="w-1/2 flex items-center">
+            <h1 class="w-full mont text-6xl font-semibold text-center text-sky-950">How can I help you?</h1>
+        </div>
+
+        <div class="w-1/2 flex items-center justify-center">
+            <div class="flex flex-col shadow-lg rounded-md min-h-2/3 w-2/3 min-w-80 p-10 gap-5 bg-slate-100">
+                <p-iftalabel>
+                    <input class="w-full" pInputText id="username" [(ngModel)]="value" autocomplete="off" />
+                    <label for="username">Username</label>
+                </p-iftalabel>
+
+                <p-floatlabel variant="in">
+                    <textarea pTextarea id="over_label" [(ngModel)]="value" rows="7" cols="50" style="resize: none" class="h-full w-full p-4"></textarea>
+                    <label for="in_label">In Label</label>
+                </p-floatlabel>
+
+                <p-button label="Submit" size="large" [fluid]="true"/>
+            </div>
+        </div>
+    </div>
+</div>

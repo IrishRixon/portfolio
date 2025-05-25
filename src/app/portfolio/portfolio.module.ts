@@ -8,13 +8,22 @@ import { ButtonModule } from 'primeng/button';
 import { IntroComponent } from './portfolio/intro/intro.component';
 import { SkillsComponent } from './portfolio/skills/skills.component';
 import { ProjectsComponent } from "./portfolio/projects/projects.component";
-
+import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { RippleModule } from 'primeng/ripple';
+import { ContactComponent } from './portfolio/contact/contact.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import { FormsModule } from '@angular/forms';
+import { IftaLabelModule } from 'primeng/iftalabel';
+import { TextareaModule } from 'primeng/textarea';
 
 @NgModule({
   declarations: [
     PortfolioComponent,
     IntroComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectsComponent,
+    ContactComponent,
   ],
   imports: [
     PortfolioRoutingModule,
@@ -22,7 +31,13 @@ import { ProjectsComponent } from "./portfolio/projects/projects.component";
     AvatarModule,
     AvatarGroupModule,
     ButtonModule,
-    ProjectsComponent
+    ScrollPanelModule,
+    RippleModule,
+    FormsModule,
+    FloatLabelModule,
+    InputTextModule,
+    IftaLabelModule,
+    TextareaModule
 ]
 })
 export class PortfolioModule { }
