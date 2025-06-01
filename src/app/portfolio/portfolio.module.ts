@@ -13,7 +13,7 @@ import { RippleModule } from 'primeng/ripple';
 import { ContactComponent } from './portfolio/contact/contact.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { FloatLabelModule } from 'primeng/floatlabel';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IftaLabelModule } from 'primeng/iftalabel';
 import { TextareaModule } from 'primeng/textarea';
 
@@ -37,7 +37,9 @@ import { TextareaModule } from 'primeng/textarea';
     FloatLabelModule,
     InputTextModule,
     IftaLabelModule,
-    TextareaModule
+    TextareaModule,
+    ReactiveFormsModule,
+    FormsModule
 ]
 })
 export class PortfolioModule { }

@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+  openPawfile() {
+    const newTab = window.open('https://pawfile.netlify.app/', '_blank');
+    newTab!.opener = null;
+    window.focus();
+  }
 }

@@ -3,7 +3,7 @@
 
     <div class="flex flex-wrap gap-10 justify-around">
         <div pRipple  style="--p-ripple-background: #bae6fd"
-            class="w-[380px] overflow-hidden rounded-lg shadow-lg hover:outline-2 hover:outline-offset-4 hover:outline-sky-500 hover:-translate-y-1 transition-[scale] hover:scale-105 hover:cursor-pointer hover:shadow-2xl">
+            class="relative w-[380px] overflow-hidden rounded-lg shadow-lg hover:outline-2 hover:outline-offset-4 hover:outline-sky-500 hover:-translate-y-1 transition-[scale] hover:scale-105 hover:cursor-pointer hover:shadow-2xl">
             <img class="object-cover h-64" src="\assets\photos\pawfile.jpeg" alt="pawfile" />
 
             <div class="flex flex-col py-9 px-7 gap-y-4">
@@ -19,6 +19,8 @@
                 </p>
                 </p-scrollpanel>
             </div>
+
+            <button type="button" class="h-full w-full absolute top-0 z-10" (click)="openPawfile()"></button>
         </div>
 
         <div pRipple  style="--p-ripple-background: #bae6fd"

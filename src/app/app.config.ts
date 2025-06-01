@@ -6,10 +6,12 @@ import Aura from '@primeng/themes/aura';
 
 import { routes } from './app.routes';
 import { MessageService } from 'primeng/api';
+import { provideHttpClient } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     MessageService,
+    provideHttpClient(),
     providePrimeNG({
       ripple: true,
     }),
