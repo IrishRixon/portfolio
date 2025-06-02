@@ -1,2 +1,9 @@
 <router-outlet></router-outlet>
 <p-toast />
+<ng-particles
+    [id]="'tsparticles'"
+    [options]="particlesOptions"
+    [particlesInit]="particlesInit"
+    (particlesLoaded)="particlesLoaded($event)"
+    class="fixed inset-0 z-10"
+></ng-particles>

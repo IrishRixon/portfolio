@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+  @ViewChild('skills') skills!: ElementRef;
+  @Output() section: EventEmitter<ElementRef> = new EventEmitter<ElementRef>();
 
+  ngAfterViewInit() {
+    this.section.emit(this.skills);
+  }  
 }
