@@ -16,6 +16,12 @@ export class ProjectsComponent {
     window.focus();
   }
 
+  openARealty() {
+    const newTab = window.open('https://amarquezrealty.netlify.app/', '_blank');
+    newTab!.opener = null;
+    window.focus();
+  }
+
   ngAfterViewInit() {
     this.section.emit(this.skills);
   }  

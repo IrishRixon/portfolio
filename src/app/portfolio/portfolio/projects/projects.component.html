@@ -1,64 +1,79 @@
-<div #projects  class="flex flex-col min-h-screen gap-10 p-16 w-100 bg-slate-100 w-full">
-    <h1 class="text-3xl font-bold text-center mont">My Projects</h1>
+<div
+  #projects
+  class="flex flex-col min-h-screen gap-10 p-16 w-100 bg-slate-100 w-full"
+>
+  <h1 class="text-3xl font-bold text-center mont">My Projects</h1>
 
-    <div class="z-20 flex flex-wrap gap-10 justify-around">
-        <div pRipple  style="--p-ripple-background: #bae6fd"
-            class="relative w-[380px] overflow-hidden rounded-lg shadow-lg hover:outline-2 hover:outline-offset-4 hover:outline-sky-500 hover:-translate-y-1 transition-[scale] hover:scale-105 hover:cursor-pointer hover:shadow-2xl">
-            <img class="object-cover h-64" src="\assets\photos\pawfile.jpeg" alt="pawfile" />
+  <div class="z-20 flex flex-wrap gap-10 justify-around">
+    <div
+      pRipple
+      style="--p-ripple-background: #bae6fd"
+      class="relative w-[380px] overflow-hidden rounded-lg shadow-lg hover:outline-2 hover:outline-offset-4 hover:outline-sky-500 hover:-translate-y-1 transition-[scale] hover:scale-105 hover:cursor-pointer hover:shadow-2xl"
+    >
+      <img
+        class="object-cover h-64"
+        src="\assets\photos\pawfile.jpeg"
+        alt="pawfile"
+      />
 
-            <div class="flex flex-col py-9 px-7 gap-y-4">
-                <p-scrollpanel [style]="{ width: '100%'}" styleClass="h-64">
-                    <h2 class="text-xl font-semibold mont">Pawfile</h2>
-                <p class="mt-4">
-                    <span class="font-medium">An innovative, affordable solution for pet identification using QR codes.</span><br><br>
-                    Create a digital profile for your pet with photos and identification details. Simply download the QR
-                    code and attach it to your pet’s collar. When scanned, it displays the pet’s profile including a
-                    "Missing" status you can toggle if your pet gets lost. This simple, cost-effective tool makes
-                    identification accessible for all pets, even aspins, ensuring every pet can be recognized and
-                    reunited with their owner.
-                </p>
-                </p-scrollpanel>
-            </div>
+      <div class="flex flex-col py-9 px-7 gap-y-4">
+        <p-scrollpanel [style]="{ width: '100%' }" styleClass="h-64">
+          <h2 class="text-xl font-semibold mont">Pawfile</h2>
+          <p class="mt-4">
+            <span class="font-medium"
+              >An innovative, affordable solution for pet identification using
+              QR codes.</span
+            ><br /><br />
+            Create a digital profile for your pet with photos and identification
+            details. Simply download the QR code and attach it to your pet’s
+            collar. When scanned, it displays the pet’s profile including a
+            "Missing" status you can toggle if your pet gets lost. This simple,
+            cost-effective tool makes identification accessible for all pets,
+            even aspins, ensuring every pet can be recognized and reunited with
+            their owner.
+          </p>
+        </p-scrollpanel>
+      </div>
 
-            <button type="button" class="h-full w-full absolute top-0 z-10" (click)="openPawfile()"></button>
-        </div>
-
-        <div pRipple  style="--p-ripple-background: #bae6fd"
-            class="z-20 w-[380px] overflow-hidden rounded-lg shadow-lg hover:outline-2 hover:outline-offset-4 hover:outline-sky-500 hover:-translate-y-1 transition-[scale] hover:scale-105 hover:cursor-pointer hover:shadow-2xl">
-            <img class="object-cover h-64" src="\assets\photos\pawfile.jpeg" alt="pawfile" />
-
-            <div class="flex flex-col py-9 px-7 gap-y-4">
-                <p-scrollpanel [style]="{ width: '100%'}" styleClass="h-64">
-                    <h2 class="text-xl font-semibold mont">Pawfile</h2>
-                <p class="mt-4">
-                    <span class="font-medium">An innovative, affordable solution for pet identification using QR codes.</span><br><br>
-                    Create a digital profile for your pet with photos and identification details. Simply download the QR
-                    code and attach it to your pet’s collar. When scanned, it displays the pet’s profile including a
-                    "Missing" status you can toggle if your pet gets lost. This simple, cost-effective tool makes
-                    identification accessible for all pets, even aspins, ensuring every pet can be recognized and
-                    reunited with their owner.
-                </p>
-                </p-scrollpanel>
-            </div>
-        </div>
-
-        <div pRipple  style="--p-ripple-background: #bae6fd"
-            class="z-20 w-[380px] overflow-hidden rounded-lg shadow-lg hover:outline-2 hover:outline-offset-4 hover:outline-sky-500 hover:-translate-y-1 transition-[scale] hover:scale-105 hover:cursor-pointer hover:shadow-2xl">
-            <img class="object-cover h-64" src="\assets\photos\pawfile.jpeg" alt="pawfile" />
-
-            <div class="flex flex-col py-9 px-7 gap-y-4">
-                <p-scrollpanel [style]="{ width: '100%'}" styleClass="h-64">
-                    <h2 class="text-xl font-semibold mont">Pawfile</h2>
-                <p class="mt-4">
-                    <span class="font-medium">An innovative, affordable solution for pet identification using QR codes.</span><br><br>
-                    Create a digital profile for your pet with photos and identification details. Simply download the QR
-                    code and attach it to your pet’s collar. When scanned, it displays the pet’s profile including a
-                    "Missing" status you can toggle if your pet gets lost. This simple, cost-effective tool makes
-                    identification accessible for all pets, even aspins, ensuring every pet can be recognized and
-                    reunited with their owner.
-                </p>
-                </p-scrollpanel>
-            </div>
-        </div>
+      <button
+        type="button"
+        class="h-full w-full absolute top-0 z-10"
+        (click)="openPawfile()"
+      ></button>
     </div>
+
+    <div
+      pRipple
+      style="--p-ripple-background: #bae6fd"
+      class="z-20 w-[380px] overflow-hidden rounded-lg shadow-lg hover:outline-2 hover:outline-offset-4 hover:outline-sky-500 hover:-translate-y-1 transition-[scale] hover:scale-105 hover:cursor-pointer hover:shadow-2xl"
+    >
+      <img
+        class="object-cover h-64"
+        src="\assets\photos\arealty.png"
+        alt="arealty"
+      />
+
+      <div class="flex flex-col py-9 px-7 gap-y-4">
+        <p-scrollpanel [style]="{ width: '100%' }" styleClass="h-64">
+          <h2 class="text-xl font-semibold mont">A. Marquez Realty</h2>
+          <p class="mt-4">
+            <span class="font-medium"
+              >Company's beautiful portfolio website</span
+            ><br /><br />
+            The task we were assigned was to create a portfolio website for a real
+            estate company. We design the website to have simple yet aesthetic
+            user interface, but never compromises the user experience. This
+            website is a Single page application utilizing Angular and PrimeNG.
+            It is also responsive, so it can be viewed in any device.
+          </p>
+        </p-scrollpanel>
+      </div>
+
+      <button
+        type="button"
+        class="h-full w-full absolute top-0 z-10"
+        (click)="openARealty()"
+      ></button>
+    </div>
+  </div>
 </div>

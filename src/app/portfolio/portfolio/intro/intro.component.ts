@@ -17,4 +17,16 @@ export class IntroComponent {
   emitSignalProjects() {
     this.scrollToProjects.emit();
   }
+
+  openGithub() {
+    const newTab = window.open('https://github.com/IrishRixon/', '_blank');
+    newTab!.opener = null;
+    window.focus();
+  }
+
+  openLinkedIn() {
+    const newTab = window.open('https://www.linkedin.com/in/irish-rixon-dela-pe%C3%B1a-656aa1340/', '_blank');
+    newTab!.opener = null;
+    window.focus();
+  }
 }

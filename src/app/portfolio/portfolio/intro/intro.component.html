@@ -16,8 +16,7 @@
     </div>
 
     <div class="absolute flex flex-col gap-y-8 right-5 z-20">
-        <p-button icon="pi pi-github" [rounded]="true" severity="secondary" size="large"/>
-        <p-button icon="pi pi-linkedin" [rounded]="true" severity="secondary" size="large" />
-        <p-button icon="pi pi-facebook" [rounded]="true" severity="secondary" size="large" />
+        <p-button icon="pi pi-github" [rounded]="true" severity="secondary" size="large" (onClick)="openGithub()"/>
+        <p-button icon="pi pi-linkedin" [rounded]="true" severity="secondary" size="large" (onClick)="openLinkedIn()" />
     </div>
 </div> 
