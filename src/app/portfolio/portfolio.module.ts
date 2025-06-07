@@ -16,6 +16,7 @@ import { FloatLabelModule } from 'primeng/floatlabel';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IftaLabelModule } from 'primeng/iftalabel';
 import { TextareaModule } from 'primeng/textarea';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { TextareaModule } from 'primeng/textarea';
     IftaLabelModule,
     TextareaModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AnimateOnScrollModule
 ]
 })
 export class PortfolioModule { }
